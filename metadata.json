@@ -1,0 +1,6 @@
+{
+  "name": "Health & Fitness Gym",
+  "description": "Premium, modern fitness website for Health & Fitness Gym, Ballia's trusted premium fitness destination. Features state-of-the-art equipment, certified trainers, transformational programs, and flexible membership plans.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

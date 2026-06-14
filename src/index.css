@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;900&family=Inter:wght@300;400;500;600;750;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Space Grotesk', sans-serif;
+
+  /* Map standard colors directly to the brand palette for instant global theme upgrade */
+  --color-rose-400: #ff4040;
+  --color-rose-500: #ff1e1e;
+  --color-rose-600: #ff1e1e;
+  --color-rose-700: #cc1212;
+  --color-rose-800: #990c0c;
+  --color-rose-950: #1a0505;
+
+  --color-zinc-950: #050505;
+  --color-zinc-900: #0a0a0a;
+  --color-zinc-800: #141414;
+  --color-zinc-700: #1f1f1f;
+  --color-zinc-600: #2d2d2d;
+}
+
+/* Custom extra-bold italic heading helper to match design spec */
+.bold-headline {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 950;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  font-style: italic;
+  line-height: 0.85;
+}
+
+/* Custom fade-in animations utility class for high-end feel */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade {
+  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Glassmorphism scrollbar aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505; /* Pitch Black */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #141414; /* Deep Zinc */
+  border: 2px solid #050505;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff1e1e; /* Electric Red */
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
